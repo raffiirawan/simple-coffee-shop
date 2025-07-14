@@ -113,7 +113,6 @@
 .menu-img {
     display: flex;
     justify-content: center;
-    /* height: 400px; */
     height: auto;
     column-gap: 24px;
     padding-bottom: 20px;
@@ -205,8 +204,31 @@
 /* ----------------------- */
 
 /* MENU GALLERY // PAGE MENU */
+.menu-gallery-title {
+    text-align: center;
+}
 .menu-gallery-container {
+    margin: 32px 64px;
+    width: 100vw;
     background-color: var(--background);
+    text-align: center;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.menu-gallery-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--putih);
+    width: 30%;
+    background-color: var(--putih);
+}
+
+.menu-gallery-card img {
+    height: 50%;
+    object-fit: cover;
+    
 }
 
 /* FOOTER */

@@ -29,14 +29,26 @@ body {
     height: 10vh;
     display: flex;
 }
+
 .navbar-logo {
     width: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 600;
-    color: var(--hitam);
 }
+
+.navbar-logo a {
+    text-decoration: none;
+    color: var(--hitam);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.navbar-logo a:hover {
+    color: var(--putih);
+}
+
 .navbar-link {
     width: 80%;
     display: flex;
@@ -45,19 +57,23 @@ body {
     padding: 16px;
     border-bottom: 2px var(--putih);
 }
+
 .navbar-link ul li {
     display: inline;
     padding: 20px;
 }
+
 .navbar-link ul a li:hover {
     border-bottom: solid 3px var(--putih);
 }
+
 .navbar-link ul a {
     text-decoration: none;
     color: var(--hitam);
     font-size: 20px;
     font-weight: 500;
 }
+
 .navbar-link ul a:hover {
     color: var(--putih);
 }
@@ -196,17 +212,18 @@ body {
     font-weight: 500;
     max-width: 50%;
 }
-.cta button {
+.cta a {
     margin: 16px 0px;
     padding: 8px 24px;
     border-radius: 24px;
-    color: #333;
+    color: var(--hitam);
     background-color: var(--putih);
     border: none;
     cursor: pointer;
     font-size: 20px;
+    text-decoration: none;
 }
-.cta button:hover {
+.cta a:hover{
     background-color: var(--coklat-agak-tua);
     color: var(--putih);
 }
@@ -222,15 +239,58 @@ body {
     align-items: center;
     height: 90vh;
 }
+
 .hero-about h1 {
     color: var(--putih);
     font-size: 64px;
     font-weight: 700;
     text-transform: uppercase;
 }
+
 .about-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
     margin: 10vh 10vw;
+    color: var(--hitam);
+    font-size: 20px;
 }
+
+.about-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    gap: 32px;
+}
+
+.about-row:nth-child(even) {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.about-row img {
+    width: 40%;
+    max-width: 320px;
+    border-radius: 12px;
+}
+
+.about-row .about-text {
+    width: 60%;
+}
+
+.about-row h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.about-row p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* ----------------------- */
 
 /* PRODUCTS GALLERY // PAGE PRODUCTS */
 .products-gallery-title {
@@ -291,6 +351,71 @@ body {
 }
 /* ----------------------- */
 
+/* CONTACT PAGE */
+.hero-contact {
+    height: 40vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/bg-cta.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-contact h1 {
+    color: var(--putih);
+    font-size: 64px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.contact-container {
+    text-align: center;
+    margin: 48px 0;
+    padding: 0 10vw;
+    font-size: 20px;
+}
+
+.contact-desc h2, .social-media h2 {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.contact-desc p {
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.contact-desc a {
+    color: var(--coklat-tua);
+    text-decoration: none;
+}
+
+.social-media {
+    margin-top: 48px;
+}
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    margin: 0 8px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.social-media a:hover {
+    background-color: var(--coklat-agak-tua);
+}
+.social-media a i {
+    font-size: 24px;
+    color: var(--hitam);
+}
+.social-media a:hover i {
+    color: var(--putih);
+}
+/* ----------------------- */
 
 /* FOOTER */
 .footer {

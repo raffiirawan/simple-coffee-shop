@@ -19,12 +19,12 @@ body {
     display: flex;
     flex-direction: column;
 }
-.wrapper {
+main {
     flex: 1;
 }
 
 /* NAVBAR */
-.navbar {
+nav {
     background-color: var(--coklat-muda);
     height: 10vh;
     display: flex;
@@ -418,7 +418,7 @@ body {
 /* ----------------------- */
 
 /* FOOTER */
-.footer {
+footer {
     margin-top: 5vh;
     background-color: var(--coklat-muda);
     text-align: center;
